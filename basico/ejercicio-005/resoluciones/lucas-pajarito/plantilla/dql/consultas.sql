@@ -3,7 +3,7 @@ USE campuslands_mysql;
 
 SELECT * FROM basico_ejercicio_005;
 
-SELECT categoria, COUNT(*) AS total_registros, AVG(puntaje) AS promedio
+SELECT marca,dueño, COUNT(*) AS total_registros
 FROM basico_ejercicio_005
-GROUP BY categoria
-ORDER BY promedio DESC;
+GROUP BY marca, dueño
+ORDER BY total_registros DESC;

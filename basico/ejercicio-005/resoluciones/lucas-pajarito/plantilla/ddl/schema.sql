@@ -8,9 +8,9 @@ DROP TABLE IF EXISTS basico_ejercicio_005;
 
 CREATE TABLE basico_ejercicio_005 (
   id INT AUTO_INCREMENT PRIMARY KEY,
-  nombre VARCHAR(120) NOT NULL,
-  categoria VARCHAR(80) NOT NULL,
-  puntaje DECIMAL(10,2) NOT NULL DEFAULT 0,
+  dueño VARCHAR(120) NOT NULL,
+  marca VARCHAR(80) NOT NULL,
+  precio DECIMAL(10,2) NOT NULL DEFAULT 0,
   estado ENUM('activo','revision','inactivo') NOT NULL DEFAULT 'activo',
   creado_en DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP
 );
