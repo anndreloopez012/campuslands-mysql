@@ -1,4 +1,4 @@
-# Ejercicio 010 - UNIQUE para carreras urbanas
+    # Ejercicio 010 - UNIQUE para carreras urbanas
 
 ## Dificultad
 Intermedio inicial
