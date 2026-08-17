@@ -1,0 +1,16 @@
+-- Campuslands MySQL - avanzado ejercicio 013
+-- Contexto: Modulo de datos para catalogo de peliculas de miedo (JSON en MySQL).
+
+CREATE DATABASE IF NOT EXISTS campuslands_mysql;
+USE campuslands_mysql;
+
+DROP TABLE IF EXISTS avanzado_ejercicio_013_peliculas;
+
+CREATE TABLE avanzado_ejercicio_013_peliculas (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  titulo VARCHAR(150) NOT NULL,
+  director VARCHAR(100) NOT NULL,
+  anio_estreno INT NOT NULL,
+  detalles_json JSON NOT NULL,
+  creado_en DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP
+);
