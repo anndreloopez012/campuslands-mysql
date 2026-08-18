@@ -41,5 +41,4 @@ INSERT INTO ejercicios (codigo, titulo, dificultad, tematica) VALUES
 ('EJ-023', 'Sistema de Sigilo y Cobertura', 'Intermedio aplicado', 'videojuego de accion y aventura'),
 ('EJ-024', 'Plataformeo 3D y Puzles de Entorno', 'Avanzado', 'videojuego de accion y aventura'),
 ('EJ-025', 'Diseño de Enfrentamientos con Jefes', 'Avanzado aplicado', 'videojuego de accion y aventura'),
-('EJ-026', 'Gestión de Inventario Dinámico', 'Intermedio aplicado', 'videojuego de accion y aventura'),
-('EJ-027', 'window functions para videojuego de accion y aventura', 'Avanzado aplicado', 'videojuego de accion y aventura');
+('EJ-026', 'Gestión de Inventario Dinámico', 'Intermedio aplicado', 'videojuego de accion y aventura');
