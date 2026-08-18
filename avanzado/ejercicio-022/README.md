@@ -1,27 +1,4 @@
-# Ejercicio 022 - vistas avanzadas para animacion 3D
-
-## Dificultad
-Avanzado aplicado
-
-## Tematica usada
-animacion 3D
-
-## Contexto del problema
-Una academia tecnica esta construyendo un modulo de datos inspirado en animacion 3D. El objetivo es guardar informacion ordenada, consultar indicadores utiles y dejar scripts SQL faciles de revisar por otro desarrollador.
-
-Aunque el ejercicio pertenece al nivel avanzado, debes resolverlo con mentalidad profesional: nombres claros, datos coherentes, consultas verificables y evidencia de resultados.
-
-## Objetivo
-Practicar vistas avanzadas en MySQL creando una solucion que pueda ejecutarse desde cero y que demuestre analisis, orden y criterio tecnico.
-
-## Que vas a practicar
-- Lectura cuidadosa de requisitos.
-- Creacion o ajuste de tablas en MySQL.
-- Insercion de datos realistas.
-- Consultas para responder preguntas concretas.
-- Organizacion de archivos SQL por responsabilidad.
-- Documentacion breve de decisiones tecnicas.
-
+ 
 ## Explicacion paso a paso
 1. Lee el contexto y detecta que datos se necesitan.
 2. Revisa la plantilla en `plantilla/` para entender el punto de partida.
