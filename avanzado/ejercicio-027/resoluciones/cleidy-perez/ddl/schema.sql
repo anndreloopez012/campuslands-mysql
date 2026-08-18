@@ -1,6 +1,3 @@
--- Campuslands MySQL - avanzado ejercicio 027
--- Ejecuta este archivo antes de inserts.sql.
-
 CREATE DATABASE IF NOT EXISTS juego_accion_aventura;
 USE juego_accion_aventura;
 
