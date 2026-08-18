@@ -1,0 +1,83 @@
+=== Como root: SHOW GRANTS FOR jugador_lira (rol otorgado, sin resolver) ===
++-----------------------------------------------+
+| Grants for jugador_lira@%                     |
++-----------------------------------------------+
+| GRANT USAGE ON *.* TO `jugador_lira`@`%`      |
+| GRANT `rol_jugador`@`%` TO `jugador_lira`@`%` |
++-----------------------------------------------+
+
+=== Como root: SHOW GRANTS ... USING (privilegios YA resueltos por rol) ===
+-- jugador_lira USING rol_jugador --
++--------------------------------------------------------------------------------+
+| Grants for jugador_lira@%                                                      |
++--------------------------------------------------------------------------------+
+| GRANT USAGE ON *.* TO `jugador_lira`@`%`                                       |
+| GRANT SELECT ON `campuslands_mysql`.`objetos_inventario` TO `jugador_lira`@`%` |
+| GRANT SELECT ON `campuslands_mysql`.`personajes_rpg` TO `jugador_lira`@`%`     |
+| GRANT `rol_jugador`@`%` TO `jugador_lira`@`%`                                  |
++--------------------------------------------------------------------------------+
+-- gm_orion USING rol_game_master --
++--------------------------------------------------------------------------------------------+
+| Grants for gm_orion@%                                                                      |
++--------------------------------------------------------------------------------------------+
+| GRANT USAGE ON *.* TO `gm_orion`@`%`                                                       |
+| GRANT SELECT, INSERT, UPDATE ON `campuslands_mysql`.`objetos_inventario` TO `gm_orion`@`%` |
+| GRANT SELECT, INSERT, UPDATE ON `campuslands_mysql`.`personajes_rpg` TO `gm_orion`@`%`     |
+| GRANT `rol_game_master`@`%` TO `gm_orion`@`%`                                              |
++--------------------------------------------------------------------------------------------+
+-- admin_kael USING rol_administrador --
++--------------------------------------------------------------------------------------+
+| Grants for admin_kael@%                                                              |
++--------------------------------------------------------------------------------------+
+| GRANT USAGE ON *.* TO `admin_kael`@`%`                                               |
+| GRANT ALL PRIVILEGES ON `campuslands_mysql`.`objetos_inventario` TO `admin_kael`@`%` |
+| GRANT ALL PRIVILEGES ON `campuslands_mysql`.`personajes_rpg` TO `admin_kael`@`%`     |
+| GRANT `rol_administrador`@`%` TO `admin_kael`@`%`                                    |
++--------------------------------------------------------------------------------------+
+
+=== Como jugador_lira (rol_jugador) ===
+-- 3. SELECT: debe funcionar --
++---------+----------+-------+
+| nombre  | clase    | nivel |
++---------+----------+-------+
+| Thalrik | Guerrero |    22 |
+| Vaenna  | Mago     |    18 |
+| Doryen  | Arquero  |    25 |
+| Sylas   | Sanador  |    15 |
++---------+----------+-------+
+
+-- 4. INSERT: debe FALLAR --
+ERROR 1142 (42000) at line 1: INSERT command denied to user 'jugador_lira'@'localhost' for table 'personajes_rpg'
+
+=== Como gm_orion (rol_game_master) ===
+-- 5. INSERT: debe funcionar --
+
+-- 6. UPDATE: debe funcionar --
++--------+-------+
+| nombre | nivel |
++--------+-------+
+| Doryen |    26 |
++--------+-------+
+
+-- 7. DELETE: debe FALLAR --
+ERROR 1142 (42000) at line 1: DELETE command denied to user 'gm_orion'@'localhost' for table 'personajes_rpg'
+
+=== Como admin_kael (rol_administrador) ===
+-- 8. DELETE: debe funcionar (limpia al Nyx de prueba) --
++---------+
+| nombre  |
++---------+
+| Thalrik |
+| Vaenna  |
+| Doryen  |
+| Sylas   |
++---------+
+
+=== Como root: REVOKE UPDATE del ROL (no del usuario) ===
+
+=== Como gm_orion otra vez: el mismo UPDATE del paso 6 ahora debe FALLAR ===
+ERROR 1142 (42000) at line 1: UPDATE command denied to user 'gm_orion'@'localhost' for table 'personajes_rpg'
+
+=== Limpieza final (como root) ===
+resultado
+usuarios y roles eliminados

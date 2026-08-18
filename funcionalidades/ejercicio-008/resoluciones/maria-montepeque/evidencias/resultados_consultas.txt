@@ -1,0 +1,83 @@
++--------------------------+--------------+--------+-------------------------+
+| nombre                   | categoria    | precio | precio_promedio_general |
++--------------------------+--------------+--------+-------------------------+
+| Burger Doble Smash       | Hamburguesas |   9.25 |                    5.13 |
+| Burger BBQ Ahumada       | Hamburguesas |   8.75 |                    5.13 |
+| Bowl Poke de Atun        | Bowls        |   8.00 |                    5.13 |
+| Burger Clasica Urbana    | Hamburguesas |   7.50 |                    5.13 |
+| Bowl Teriyaki de Pollo   | Bowls        |   7.25 |                    5.13 |
+| Bowl Buddha Vegetal      | Bowls        |   6.50 |                    5.13 |
+| Taco de Birria           | Tacos        |   4.00 |                    5.13 |
+| Taco Vegano de Jackfruit | Tacos        |   3.75 |                    5.13 |
+| Taco al Pastor           | Tacos        |   3.50 |                    5.13 |
+| Flan de Cajeta           | Postres      |   3.50 |                    5.13 |
+| Churros con Chocolate    | Postres      |   3.00 |                    5.13 |
+| Horchata Artesanal       | Bebidas      |   2.50 |                    5.13 |
+| Limonada de Jamaica      | Bebidas      |   2.25 |                    5.13 |
+| Agua de Pepino y Menta   | Bebidas      |   2.00 |                    5.13 |
++--------------------------+--------------+--------+-------------------------+
++------------------------+--------------+--------+
+| nombre                 | categoria    | precio |
++------------------------+--------------+--------+
+| Burger Doble Smash     | Hamburguesas |   9.25 |
+| Burger BBQ Ahumada     | Hamburguesas |   8.75 |
+| Bowl Poke de Atun      | Bowls        |   8.00 |
+| Burger Clasica Urbana  | Hamburguesas |   7.50 |
+| Bowl Teriyaki de Pollo | Bowls        |   7.25 |
+| Bowl Buddha Vegetal    | Bowls        |   6.50 |
++------------------------+--------------+--------+
++--------------------+--------------+--------+
+| nombre             | categoria    | precio |
++--------------------+--------------+--------+
+| Taco de Birria     | Tacos        |   4.00 |
+| Burger Doble Smash | Hamburguesas |   9.25 |
+| Burger BBQ Ahumada | Hamburguesas |   8.75 |
+| Bowl Poke de Atun  | Bowls        |   8.00 |
+| Horchata Artesanal | Bebidas      |   2.50 |
+| Flan de Cajeta     | Postres      |   3.50 |
++--------------------+--------------+--------+
++--------------------------+--------------+--------+
+| nombre                   | categoria    | precio |
++--------------------------+--------------+--------+
+| Bowl Buddha Vegetal      | Bowls        |   6.50 |
+| Bowl Poke de Atun        | Bowls        |   8.00 |
+| Bowl Teriyaki de Pollo   | Bowls        |   7.25 |
+| Burger BBQ Ahumada       | Hamburguesas |   8.75 |
+| Burger Clasica Urbana    | Hamburguesas |   7.50 |
+| Burger Doble Smash       | Hamburguesas |   9.25 |
+| Churros con Chocolate    | Postres      |   3.00 |
+| Horchata Artesanal       | Bebidas      |   2.50 |
+| Limonada de Jamaica      | Bebidas      |   2.25 |
+| Taco al Pastor           | Tacos        |   3.50 |
+| Taco de Birria           | Tacos        |   4.00 |
+| Taco Vegano de Jackfruit | Tacos        |   3.75 |
++--------------------------+--------------+--------+
++------------------------+-----------+--------+
+| nombre                 | categoria | precio |
++------------------------+-----------+--------+
+| Agua de Pepino y Menta | Bebidas   |   2.00 |
+| Flan de Cajeta         | Postres   |   3.50 |
++------------------------+-----------+--------+
++--------------------------+--------------+--------+
+| nombre                   | categoria    | precio |
++--------------------------+--------------+--------+
+| Bowl Buddha Vegetal      | Bowls        |   6.50 |
+| Bowl Poke de Atun        | Bowls        |   8.00 |
+| Bowl Teriyaki de Pollo   | Bowls        |   7.25 |
+| Burger BBQ Ahumada       | Hamburguesas |   8.75 |
+| Burger Clasica Urbana    | Hamburguesas |   7.50 |
+| Burger Doble Smash       | Hamburguesas |   9.25 |
+| Churros con Chocolate    | Postres      |   3.00 |
+| Horchata Artesanal       | Bebidas      |   2.50 |
+| Limonada de Jamaica      | Bebidas      |   2.25 |
+| Taco al Pastor           | Tacos        |   3.50 |
+| Taco de Birria           | Tacos        |   4.00 |
+| Taco Vegano de Jackfruit | Tacos        |   3.75 |
++--------------------------+--------------+--------+
++--------------------+--------------+----------------+------------------+
+| nombre             | categoria    | total_unidades | ingresos_totales |
++--------------------+--------------+----------------+------------------+
+| Taco al Pastor     | Tacos        |             13 |            45.50 |
+| Burger BBQ Ahumada | Hamburguesas |              5 |            43.75 |
+| Burger Doble Smash | Hamburguesas |              3 |            27.75 |
++--------------------+--------------+----------------+------------------+

@@ -1,0 +1,53 @@
+-- 1. Estado ANTES del backup --
++----------------+
+| total_partidas |
++----------------+
+|              5 |
++----------------+
++---------------+
+| total_objetos |
++---------------+
+|            10 |
++---------------+
+
+-- 2. mysqldump: backup completo --
+$ docker exec -i campuslands-mysql-db mysqldump -u campus -pcampus123 --no-tablespaces campuslands_mysql partidas_guardadas objetos_recolectados > evidencias/backup_completo.sql
+(archivo generado: evidencias/backup_completo.sql, 85 lineas)
+
+-- 3. DESASTRE simulado: DROP de las 2 tablas --
+
+-- 4. Confirmar que ya no existen (SHOW TABLES sin filas) --
+(sin resultados = las tablas ya no existen)
+
+-- 5. RESTORE desde el backup del paso 2 --
+$ docker exec -i campuslands-mysql-db mysql -u campus -pcampus123 campuslands_mysql < evidencias/backup_completo.sql
+
+-- 6. Estado DESPUES del restore (debe ser identico al paso 1) --
++----------------+
+| total_partidas |
++----------------+
+|              5 |
++----------------+
++---------------+
+| total_objetos |
++---------------+
+|            10 |
++---------------+
++------------------+--------------+---------------------+
+| jugador          | nivel_actual | ubicacion           |
++------------------+--------------+---------------------+
+| Kaelen Voss      |           12 | Ruinas de Ashfall   |
+| Mira Solene      |            8 | Bosque Sombrio      |
+| Dorian Thackeray |           15 | Ciudadela de Hierro |
+| Kaelen Voss      |           14 | Cumbre Helada       |
+| Yara Nix         |            6 | Puerto Abandonado   |
++------------------+--------------+---------------------+
+
+-- 7. Backup PARCIAL con --where (solo el progreso de Kaelen Voss) --
+$ docker exec -i campuslands-mysql-db mysqldump -u campus -pcampus123 --no-tablespaces --where="jugador='Kaelen Voss'" campuslands_mysql partidas_guardadas > evidencias/backup_solo_kaelen.sql
+Filas capturadas en el backup parcial:
+INSERT INTO `partidas_guardadas` VALUES (1,'Kaelen Voss',12,8400,'Ruinas de Ashfall','2026-06-01 20:15:00'),(4,'Kaelen Voss',14,9750,'Cumbre Helada','2026-06-10 22:30:00');
+
+-- 8. Backup de SOLO ESTRUCTURA (--no-data) --
+$ docker exec -i campuslands-mysql-db mysqldump -u campus -pcampus123 --no-tablespaces --no-data campuslands_mysql partidas_guardadas objetos_recolectados > evidencias/backup_solo_estructura.sql
+Lineas INSERT en el backup de solo estructura: 0 (debe ser 0)

@@ -1,0 +1,64 @@
++-------------+-------------------------+------------+---------------+
+| alias       | titulo                  | genero     | horas_jugadas |
++-------------+-------------------------+------------+---------------+
+| ByteRunner  | Bastion Eterno          | Estrategia |          76.5 |
+| ByteRunner  | Rally Nocturno          | Carreras   |          21.0 |
+| EchoRealm   | Rally Nocturno          | Carreras   |           5.5 |
+| EchoRealm   | Reino de Cenizas        | RPG        |           3.0 |
+| GhostFrame  | Bastion Eterno          | Estrategia |          40.0 |
+| MysticLoop  | Modulo Perdido          | Puzzle     |          14.0 |
+| NovaPixel   | Estelar: Horizonte Roto | RPG        |         142.5 |
+| NovaPixel   | Forjadores de Sombra    | Accion     |          58.0 |
+| PixelSaga   | Modulo Perdido          | Puzzle     |           9.0 |
+| PixelSaga   | Saga del Viento         | Aventura   |          33.5 |
+| QuestKiller | Estelar: Horizonte Roto | RPG        |          12.0 |
+| QuestKiller | Reino de Cenizas        | RPG        |          95.0 |
++-------------+-------------------------+------------+---------------+
++-------------+-------------------------+---------------+
+| alias       | titulo                  | horas_jugadas |
++-------------+-------------------------+---------------+
+| ByteRunner  | Bastion Eterno          |          76.5 |
+| ByteRunner  | Rally Nocturno          |          21.0 |
+| EchoRealm   | Rally Nocturno          |           5.5 |
+| EchoRealm   | Reino de Cenizas        |           3.0 |
+| GhostFrame  | Bastion Eterno          |          40.0 |
+| MysticLoop  | Modulo Perdido          |          14.0 |
+| NovaPixel   | Estelar: Horizonte Roto |         142.5 |
+| NovaPixel   | Forjadores de Sombra    |          58.0 |
+| PixelSaga   | Modulo Perdido          |           9.0 |
+| PixelSaga   | Saga del Viento         |          33.5 |
+| QuestKiller | Estelar: Horizonte Roto |          12.0 |
+| QuestKiller | Reino de Cenizas        |          95.0 |
+| ZenithArc   | NULL                    |          NULL |
++-------------+-------------------------+---------------+
++-----------+----------------------+
+| alias     | plataforma_principal |
++-----------+----------------------+
+| ZenithArc | PC                   |
++-----------+----------------------+
++-------------+-------------------------+------------+
+| alias       | titulo                  | jugador_id |
++-------------+-------------------------+------------+
+| NULL        | Cronicas del Abismo     |       NULL |
+| NULL        | Vuelo Cero              |       NULL |
+| ByteRunner  | Bastion Eterno          |          2 |
+| GhostFrame  | Bastion Eterno          |          6 |
+| NovaPixel   | Estelar: Horizonte Roto |          1 |
+| QuestKiller | Estelar: Horizonte Roto |          3 |
+| NovaPixel   | Forjadores de Sombra    |          1 |
+| MysticLoop  | Modulo Perdido          |          4 |
+| PixelSaga   | Modulo Perdido          |          5 |
+| ByteRunner  | Rally Nocturno          |          2 |
+| EchoRealm   | Rally Nocturno          |          7 |
+| QuestKiller | Reino de Cenizas        |          3 |
+| EchoRealm   | Reino de Cenizas        |          7 |
+| PixelSaga   | Saga del Viento         |          5 |
++-------------+-------------------------+------------+
++------------+--------------+
+| invito     | fue_invitado |
++------------+--------------+
+| ByteRunner | GhostFrame   |
+| MysticLoop | PixelSaga    |
+| NovaPixel  | ByteRunner   |
+| NovaPixel  | QuestKiller  |
++------------+--------------+

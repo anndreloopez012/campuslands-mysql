@@ -1,0 +1,48 @@
++-------------------+-----------------+-------------+-----------------+
+| categoria         | total_productos | stock_total | precio_promedio |
++-------------------+-----------------+-------------+-----------------+
+| Vestidos          |               2 |           8 |           92.50 |
+| Ropa de Hombre    |               1 |           5 |           90.00 |
+| Pantalones        |               3 |          24 |           55.00 |
+| Camisas de Vestir |               2 |          15 |           45.00 |
+| Blusas            |               2 |          35 |           39.00 |
+| Camisas Casuales  |               2 |          22 |           35.00 |
+| Cinturones        |               2 |          22 |           26.50 |
+| Accesorios        |               1 |          40 |           22.00 |
+| Camisas           |               1 |          30 |           20.00 |
++-------------------+-----------------+-------------+-----------------+
++------------------------+------------+-------+--------+
+| nombre                 | categoria  | stock | precio |
++------------------------+------------+-------+--------+
+| Pantalon Cargo         | Pantalones |     1 |  50.00 |
+| Vestido de Noche Negro | Vestidos   |     2 | 120.00 |
++------------------------+------------+-------+--------+
++------+-------------------+-------+
+| id   | nombre            | nivel |
++------+-------------------+-------+
+|    2 | Ropa de Hombre    |     0 |
+|    4 | Camisas           |     1 |
+|    5 | Pantalones        |     1 |
+|    9 | Camisas Casuales  |     2 |
+|    8 | Camisas de Vestir |     2 |
++------+-------------------+-------+
++-----------------+-------------+------------------+
+| total_productos | stock_total | valor_inventario |
++-----------------+-------------+------------------+
+|               9 |          96 |          3831.00 |
++-----------------+-------------+------------------+
++------+-----------------------------------------------------+
+| id   | ruta_completa                                       |
++------+-----------------------------------------------------+
+|    1 | Ropa                                                |
+|   10 | Ropa > Accesorios                                   |
+|   11 | Ropa > Accesorios > Cinturones                      |
+|    2 | Ropa > Ropa de Hombre                               |
+|    4 | Ropa > Ropa de Hombre > Camisas                     |
+|    9 | Ropa > Ropa de Hombre > Camisas > Camisas Casuales  |
+|    8 | Ropa > Ropa de Hombre > Camisas > Camisas de Vestir |
+|    5 | Ropa > Ropa de Hombre > Pantalones                  |
+|    3 | Ropa > Ropa de Mujer                                |
+|    7 | Ropa > Ropa de Mujer > Blusas                       |
+|    6 | Ropa > Ropa de Mujer > Vestidos                     |
++------+-----------------------------------------------------+

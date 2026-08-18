@@ -1,0 +1,25 @@
+INSERT INTO autos_hiperdeportivos (
+    marca,
+    modelo,
+    anio,
+    motor,
+    potencia_hp,
+    velocidad_maxima_kmh,
+    precio,
+    pais_origen
+) VALUES
+('Bugatti', 'Chiron Super Sport', 2022, 'W16 8.0L', 1600, 440, 3200000000.00, 'Francia'),
+('Koenigsegg', 'Jesko Absolut', 2023, 'V8 5.0L', 1603, 531, 2850000000.00, 'Suecia'),
+('Pagani', 'Huayra BC', 2021, 'V12 6.0L', 791, 383, 1750000000.00, 'Italia'),
+('McLaren', 'Speedtail', 2020, 'V8 4.0L', 1070, 403, 1250000000.00, 'Reino Unido'),
+('Ferrari', 'SF90 Stradale', 2022, 'V8 4.0L Hibrido', 986, 340, 980000000.00, 'Italia'),
+('Lamborghini', 'Revuelto', 2024, 'V12 6.5L Hibrido', 1001, 350, 1100000000.00, 'Italia'),
+('Aston Martin', 'Valkyrie', 2022, 'V12 6.5L', 1160, 355, 1450000000.00, 'Reino Unido'),
+('Rimac', 'Nevera', 2023, 'Electrico Cuatro Motores', 1914, 412, 2200000000.00, 'Croacia'),
+('Hennessey', 'Venom F5', 2023, 'V8 6.6L', 1817, 500, 1950000000.00, 'Estados Unidos'),
+('SSC', 'Tuatura', 2022, 'V8 5.9L', 1750, 455, 1850000000.00, 'Estados Unidos'),
+('Lotus', 'Evija', 2023, 'Electrico Cuatro Motores', 2011, 350, 2100000000.00, 'Reino Unido'),
+('Gordon Murray', 'T.50', 2022, 'V12 4.0L', 654, 350, 1200000000.00, 'Reino Unido'),
+('Mercedes-AMG', 'One', 2023, 'V6 1.6L Hibrido', 1063, 352, 1400000000.00, 'Alemania'),
+('Porsche', '918 Spyder', 2020, 'V8 4.6L Hibrido', 887, 345, 950000000.00, 'Alemania'),
+('Ford', 'GT Mk IV', 2023, 'V6 3.5L Biturbo', 800, 350, 900000000.00, 'Estados Unidos');

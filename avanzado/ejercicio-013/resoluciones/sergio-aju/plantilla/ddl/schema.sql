@@ -1,0 +1,16 @@
+-- Campuslands MySQL - avanzado ejercicio 012
+-- Ejecuta este archivo antes de inserts.sql.
+
+CREATE DATABASE IF NOT EXISTS campuslands_mysql;
+USE campuslands_mysql;
+
+DROP TABLE IF EXISTS avanzado_ejercicio_012;
+
+CREATE TABLE avanzado_ejercicio_012 (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  nombre VARCHAR(120) NOT NULL, -- Nombre de la canción o pista
+  categoria VARCHAR(80) NOT NULL, -- Género musical (Ej: 'Rock', 'Pop', 'Jazz', 'Electronic')
+  puntaje DECIMAL(10,2) NOT NULL DEFAULT 0, -- Reproducciones en millones o calificación de popularidad
+  estado ENUM('activo','revision','inactivo') NOT NULL DEFAULT 'activo',
+  creado_en DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP
+);

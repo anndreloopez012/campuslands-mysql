@@ -1,0 +1,42 @@
+-- 1. Listado de partidas con JOIN --
++------------+------------+------------+------------+----------------+------------+---------------+
+| partida_id | local      | visitante  | sets_local | sets_visitante | estado     | fecha_partida |
++------------+------------+------------+------------+----------------+------------+---------------+
+|          1 | SpinMaster | SmashKing  |          3 |              1 | jugada     | 2026-05-10    |
+|          2 | LoopQueen  | BlockWall  |          3 |              2 | jugada     | 2026-05-12    |
+|          3 | SmashKing  | FlickFast  |          3 |              0 | jugada     | 2026-05-15    |
+|          4 | ChopKing   | EdgeHunter |          3 |              1 | jugada     | 2026-05-18    |
+|          5 | SpinMaster | LoopQueen  |          2 |              3 | jugada     | 2026-05-20    |
+|          6 | BlockWall  | ChopKing   |          0 |              0 | programada | 2026-07-30    |
+|          7 | FlickFast  | EdgeHunter |          0 |              0 | cancelada  | 2026-08-02    |
++------------+------------+------------+------------+----------------+------------+---------------+
+
+-- 2. Ranking de jugadores --
++------------+------------------+----------------+
+| alias      | club             | ranking_puntos |
++------------+------------------+----------------+
+| SpinMaster | Club Rojo Veloz  |           1850 |
+| SmashKing  | Club Rojo Veloz  |           1720 |
+| LoopQueen  | Paleta de Oro    |           1690 |
+| ChopKing   | Titanes del Ping |           1610 |
+| BlockWall  | Paleta de Oro    |           1540 |
+| EdgeHunter | Titanes del Ping |           1300 |
+| FlickFast  | Sin club         |           1200 |
++------------+------------------+----------------+
+
+=== Pruebas de restricciones (cada INSERT debe fallar) ===
+
+-- 3. UNIQUE: alias repetido
+ERROR 1062 (23000) at line 2: Duplicate entry 'SpinMaster' for key 'jugadores_pingpong.alias'
+
+-- 4. NOT NULL: nombre_completo obligatorio
+ERROR 1048 (23000) at line 2: Column 'nombre_completo' cannot be null
+
+-- 5. CHECK: set fuera de rango (0-3)
+ERROR 3819 (HY000) at line 2: Check constraint 'chk_sets_local_validos' is violated.
+
+-- 6. FOREIGN KEY: jugador inexistente
+ERROR 1452 (23000) at line 2: Cannot add or update a child row: a foreign key constraint fails (`campuslands_mysql`.`partidas_pingpong`, CONSTRAINT `fk_partida_jugador_local` FOREIGN KEY (`jugador_local_id`) REFERENCES `jugadores_pingpong` (`id`))
+
+-- 7. CHECK: jugador contra si mismo
+ERROR 3819 (HY000) at line 2: Check constraint 'chk_jugadores_distintos' is violated.

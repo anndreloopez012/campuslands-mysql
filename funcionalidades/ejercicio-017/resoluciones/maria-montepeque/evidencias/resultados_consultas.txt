@@ -1,0 +1,49 @@
++--------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| nombre             | descripcion                                                                                                                                                |
++--------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Etanol Anhidro     | Alcohol de alta pureza usado como solvente en sintesis organica y como combustible renovable. Es inflamable y debe manejarse lejos de fuentes de ignicion. |
+| Metanol Industrial | Alcohol simple usado como disolvente y como materia prima en la sintesis de formaldehido. Es toxico si se ingiere o se inhala en espacios cerrados.        |
+| Acetona Tecnica    | Cetona volatil ampliamente usada como disolvente de resinas y pinturas. Se evapora rapidamente y es altamente inflamable en presencia de chispas.          |
+| Glicerina Refinada | Subproducto de la saponificacion utilizado como humectante en cosmeticos y como materia prima en la sintesis de nitroglicerina para uso farmaceutico.      |
++--------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------+
++----+-------------+-------------------+------------+------+---------------+------+---------+------+------+----------+-------------+
+| id | select_type | table             | partitions | type | possible_keys | key  | key_len | ref  | rows | filtered | Extra       |
++----+-------------+-------------------+------------+------+---------------+------+---------+------+------+----------+-------------+
+|  1 | SIMPLE      | formulas_quimicas | NULL       | ALL  | NULL          | NULL | NULL    | NULL |    6 |    30.56 | Using where |
++----+-------------+-------------------+------------+------+---------------+------+---------+------+------+----------+-------------+
++--------------------+--------------------+
+| nombre             | relevancia         |
++--------------------+--------------------+
+| Etanol Anhidro     | 1.5271084308624268 |
+| Metanol Industrial | 0.3624762296676636 |
+| Glicerina Refinada | 0.3624762296676636 |
++--------------------+--------------------+
++----+-------------+-------------------+------------+----------+---------------+------------+---------+-------+------+----------+-----------------------------------+
+| id | select_type | table             | partitions | type     | possible_keys | key        | key_len | ref   | rows | filtered | Extra                             |
++----+-------------+-------------------+------------+----------+---------------+------------+---------+-------+------+----------+-----------------------------------+
+|  1 | SIMPLE      | formulas_quimicas | NULL       | fulltext | ft_formula    | ft_formula | 0       | const |    1 |   100.00 | Using where; Ft_hints: no_ranking |
++----+-------------+-------------------+------------+----------+---------------+------------+---------+-------+------+----------+-----------------------------------+
++-----------------------------+-----------+
+| nombre                      | categoria |
++-----------------------------+-----------+
+| Acido Clorhidrico Diluido   | Acido     |
+| Acido Sulfurico Concentrado | Acido     |
+| Acido Acetico Glacial       | Acido     |
++-----------------------------+-----------+
++--------------------+
+| nombre             |
++--------------------+
+| Hidroxido de Sodio |
++--------------------+
++--------------------+
+| nombre             |
++--------------------+
+| Hidroxido de Sodio |
+| Metanol Industrial |
+| Acetona Tecnica    |
++--------------------+
++--------------------------+-------+
+| Variable_name            | Value |
++--------------------------+-------+
+| innodb_ft_min_token_size | 3     |
++--------------------------+-------+

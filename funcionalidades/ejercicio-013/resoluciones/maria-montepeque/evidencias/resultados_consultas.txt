@@ -1,0 +1,92 @@
++-----------------------+-------+-------------+
+| titulo                | capas | complejidad |
++-----------------------+-------+-------------+
+| Paisaje Alienigena    |    35 | Compleja    |
+| Ciudad Neon           |    30 | Compleja    |
+| Dragon de Cristal     |    28 | Compleja    |
+| Guardiana del Bosque  |    24 | Compleja    |
+| Ruinas Antiguas       |    22 | Compleja    |
+| Robot Centinela       |    18 | Compleja    |
+| Concept Armadura      |    16 | Compleja    |
+| Concept Nave Espacial |    14 | Media       |
+| Gato Mago             |    10 | Media       |
+| Personaje Chibi       |     6 | Media       |
+| Icono App Clima       |     4 | Simple      |
+| Icono Perfil          |     3 | Simple      |
+| Icono Notificacion    |     3 | Simple      |
+| Icono Boton Play      |     2 | Simple      |
++-----------------------+-------+-------------+
++-------------+-----------------------+------------------+------------------+----------+
+| alias       | titulo                | horas_trabajadas | tarifa_hora_base | subtotal |
++-------------+-----------------------+------------------+------------------+----------+
+| Mika Aoi    | Ciudad Neon           |             18.0 |            25.00 |   450.00 |
+| Nadia Prism | Paisaje Alienigena    |             20.0 |            22.00 |   440.00 |
+| Nadia Prism | Dragon de Cristal     |             16.0 |            22.00 |   352.00 |
+| Mika Aoi    | Guardiana del Bosque  |             12.0 |            25.00 |   300.00 |
+| Renzo Volt  | Ruinas Antiguas       |             14.0 |            20.00 |   280.00 |
+| Nadia Prism | Concept Armadura      |             10.0 |            22.00 |   220.00 |
+| Renzo Volt  | Robot Centinela       |              9.0 |            20.00 |   180.00 |
+| Cami Duna   | Concept Nave Espacial |              8.0 |            15.00 |   120.00 |
+| Cami Duna   | Gato Mago             |              6.0 |            15.00 |    90.00 |
+| Mika Aoi    | Icono App Clima       |              2.0 |            25.00 |    50.00 |
+| Theo Lark   | Personaje Chibi       |              4.0 |            10.00 |    40.00 |
+| Cami Duna   | Icono Perfil          |              1.5 |            15.00 |    22.50 |
+| Nadia Prism | Icono Notificacion    |              1.0 |            22.00 |    22.00 |
+| Theo Lark   | Icono Boton Play      |              0.5 |            10.00 |     5.00 |
++-------------+-----------------------+------------------+------------------+----------+
++-------------+--------------+-----------------------+----------+-------+---------------+
+| alias       | nivel        | titulo                | subtotal | bono  | total_a_pagar |
++-------------+--------------+-----------------------+----------+-------+---------------+
+| Mika Aoi    | Profesional  | Ciudad Neon           |   450.00 | 67.50 |        517.50 |
+| Nadia Prism | Avanzado     | Paisaje Alienigena    |   440.00 | 44.00 |        484.00 |
+| Nadia Prism | Avanzado     | Dragon de Cristal     |   352.00 | 35.20 |        387.20 |
+| Mika Aoi    | Profesional  | Guardiana del Bosque  |   300.00 | 45.00 |        345.00 |
+| Renzo Volt  | Avanzado     | Ruinas Antiguas       |   280.00 | 28.00 |        308.00 |
+| Nadia Prism | Avanzado     | Concept Armadura      |   220.00 | 22.00 |        242.00 |
+| Renzo Volt  | Avanzado     | Robot Centinela       |   180.00 | 18.00 |        198.00 |
+| Cami Duna   | Intermedio   | Concept Nave Espacial |   120.00 |  6.00 |        126.00 |
+| Cami Duna   | Intermedio   | Gato Mago             |    90.00 |  4.50 |         94.50 |
+| Mika Aoi    | Profesional  | Icono App Clima       |    50.00 |  7.50 |         57.50 |
+| Theo Lark   | Principiante | Personaje Chibi       |    40.00 |  0.00 |         40.00 |
+| Nadia Prism | Avanzado     | Icono Notificacion    |    22.00 |  2.20 |         24.20 |
+| Cami Duna   | Intermedio   | Icono Perfil          |    22.50 |  1.13 |         23.63 |
+| Theo Lark   | Principiante | Icono Boton Play      |     5.00 |  0.00 |          5.00 |
++-------------+--------------+-----------------------+----------+-------+---------------+
++----------------------+-------+
+| titulo               | capas |
++----------------------+-------+
+| Paisaje Alienigena   |    35 |
+| Ciudad Neon          |    30 |
+| Dragon de Cristal    |    28 |
+| Guardiana del Bosque |    24 |
+| Ruinas Antiguas      |    22 |
+| Robot Centinela      |    18 |
+| Concept Armadura     |    16 |
++----------------------+-------+
++-----------------------+---------------+--------------------+
+| titulo                | fecha_entrega | dias_desde_entrega |
++-----------------------+---------------+--------------------+
+| Concept Armadura      | 2026-06-01    |                 57 |
+| Icono Notificacion    | 2026-05-20    |                 69 |
+| Concept Nave Espacial | 2026-05-01    |                 88 |
+| Paisaje Alienigena    | 2026-04-15    |                104 |
+| Ruinas Antiguas       | 2026-04-05    |                114 |
+| Dragon de Cristal     | 2026-03-10    |                140 |
+| Icono App Clima       | 2026-03-01    |                149 |
+| Ciudad Neon           | 2026-02-20    |                158 |
+| Icono Perfil          | 2026-02-15    |                163 |
+| Gato Mago             | 2026-02-10    |                168 |
+| Robot Centinela       | 2026-01-25    |                184 |
+| Guardiana del Bosque  | 2026-01-15    |                194 |
+| Icono Boton Play      | 2026-01-10    |                199 |
+| Personaje Chibi       | 2026-01-05    |                204 |
++-----------------------+---------------+--------------------+
++-------------+--------------+------------------+------------------+
+| alias       | nivel        | tarifa_hora_base | ingresos_totales |
++-------------+--------------+------------------+------------------+
+| Nadia Prism | Avanzado     |            22.00 |          1137.40 |
+| Mika Aoi    | Profesional  |            25.00 |           920.00 |
+| Renzo Volt  | Avanzado     |            20.00 |           506.00 |
+| Cami Duna   | Intermedio   |            15.00 |           244.13 |
+| Theo Lark   | Principiante |            10.00 |            45.00 |
++-------------+--------------+------------------+------------------+

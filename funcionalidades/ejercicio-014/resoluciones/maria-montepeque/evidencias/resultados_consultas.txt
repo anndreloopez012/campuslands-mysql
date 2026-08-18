@@ -1,0 +1,37 @@
++------------------+------------+-------------+--------------+--------------+
+| nombre           | estado     | presupuesto | gasto_actual | total_frames |
++------------------+------------+-------------+--------------+--------------+
+| Aventura Estelar | produccion |    50000.00 |       616.00 |            6 |
+| Mundo de Cristal | produccion |    30000.00 |       510.75 |            4 |
+| Cortometraje Eco | pausado    |     8000.00 |       115.50 |            2 |
+| Piloto Robotico  | finalizado |    15000.00 |         0.00 |            0 |
++------------------+------------+-------------+--------------+--------------+
++------------------+--------------+--------------+
+| nombre           | gasto_actual | total_frames |
++------------------+--------------+--------------+
+| Mundo de Cristal |       644.00 |            5 |
++------------------+--------------+--------------+
++------------------+--------------+--------------+
+| nombre           | gasto_actual | total_frames |
++------------------+--------------+--------------+
+| Aventura Estelar |       516.50 |            5 |
++------------------+--------------+--------------+
++-------------+-------------+----------------+-------------+---------------------+
+| proyecto_id | campo       | valor_anterior | valor_nuevo | modificado_en       |
++-------------+-------------+----------------+-------------+---------------------+
+|           3 | presupuesto | 8000.00        | 9000.00     | 2026-07-28 01:14:44 |
+|           2 | estado      | produccion     | finalizado  | 2026-07-28 01:14:45 |
++-------------+-------------+----------------+-------------+---------------------+
++----------------------------+
+| frames_de_cortometraje_eco |
++----------------------------+
+|                          0 |
++----------------------------+
+
+=== Sentencias que deben fallar ===
+
+-- 6. Bajar presupuesto por debajo del gasto ya realizado
+ERROR 1644 (45000) at line 2: El presupuesto no puede ser menor al gasto ya realizado.
+
+-- 7. Borrar un proyecto que sigue en produccion
+ERROR 1644 (45000) at line 2: No se puede eliminar un proyecto que sigue en produccion.

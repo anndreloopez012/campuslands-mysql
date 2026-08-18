@@ -1,0 +1,72 @@
++-------------------------------+---------+-----------------------+------------+
+| nombre                        | proceso | material_base         | espesor_mm |
++-------------------------------+---------+-----------------------+------------+
+| Chasis Vehiculo Todo Terreno  | MIG     | Acero al carbono      | 4          |
+| Estructura Puente Peatonal    | MIG     | Acero al carbono      | 8          |
+| Marco Estructural Bodega      | FCAW    | Acero al carbono      | 10         |
+| Placa Base de Maquinaria      | MIG     | Acero al carbono      | 20         |
+| Reparacion Casco de Barco     | SMAW    | Acero naval           | 10         |
+| Soporte de Tuberia Industrial | TIG     | Acero inoxidable 304  | 3          |
+| Tanque de Almacenamiento      | SMAW    | Acero inoxidable 316L | 12         |
+| Tuberia de Alta Presion       | TIG     | Acero aleado          | 6          |
++-------------------------------+---------+-----------------------+------------+
++-------------------------------+-----------+
+| nombre                        | electrodo |
++-------------------------------+-----------+
+| Tuberia de Alta Presion       | ER80S-B2  |
+| Soporte de Tuberia Industrial | ER308L    |
++-------------------------------+-----------+
++------------------------------+-------------------------+
+| nombre                       | certificaciones         |
++------------------------------+-------------------------+
+| Estructura Puente Peatonal   | ["AWS D1.1", "ASME IX"] |
+| Chasis Vehiculo Todo Terreno | ["AWS D1.1"]            |
+| Reparacion Casco de Barco    | ["AWS D1.1", "ABS"]     |
+| Marco Estructural Bodega     | ["AWS D1.1", "ASME IX"] |
+| Placa Base de Maquinaria     | ["AWS D1.1", "ASME IX"] |
++------------------------------+-------------------------+
++-------------------------------+--------+----------+------------------+
+| nombre                        | numero | amperaje | velocidad_mm_min |
++-------------------------------+--------+----------+------------------+
+| Chasis Vehiculo Todo Terreno  |      1 |      160 |              300 |
+| Estructura Puente Peatonal    |      1 |      210 |              260 |
+| Estructura Puente Peatonal    |      2 |      220 |              250 |
+| Marco Estructural Bodega      |      1 |      230 |              340 |
+| Marco Estructural Bodega      |      2 |      235 |              330 |
+| Placa Base de Maquinaria      |      1 |      260 |              220 |
+| Placa Base de Maquinaria      |      2 |      265 |              210 |
+| Placa Base de Maquinaria      |      3 |      270 |              200 |
+| Reparacion Casco de Barco     |      1 |      140 |              130 |
+| Reparacion Casco de Barco     |      2 |      145 |              125 |
+| Soporte de Tuberia Industrial |      1 |       90 |               90 |
+| Tanque de Almacenamiento      |      1 |       95 |              120 |
+| Tanque de Almacenamiento      |      2 |      100 |              115 |
+| Tanque de Almacenamiento      |      3 |      100 |              110 |
+| Tuberia de Alta Presion       |      1 |      120 |               80 |
+| Tuberia de Alta Presion       |      2 |      130 |               75 |
++-------------------------------+--------+----------+------------------+
++----------------------------+---------------------+-------------+
+| nombre                     | inspeccion_aprobada | inspector   |
++----------------------------+---------------------+-------------+
+| Estructura Puente Peatonal | true                | Laura Nieto |
++----------------------------+---------------------+-------------+
++----+-------------+---------------------+------------+------+---------------+------+---------+------+------+----------+-------------+
+| id | select_type | table               | partitions | type | possible_keys | key  | key_len | ref  | rows | filtered | Extra       |
++----+-------------+---------------------+------------+------+---------------+------+---------+------+------+----------+-------------+
+|  1 | SIMPLE      | proyectos_soldadura | NULL       | ALL  | NULL          | NULL | NULL    | NULL |  308 |   100.00 | Using where |
++----+-------------+---------------------+------------+------+---------------+------+---------+------+------+----------+-------------+
++----+-------------+---------------------+------------+------+---------------+------+---------+------+------+----------+-------------+
+| id | select_type | table               | partitions | type | possible_keys | key  | key_len | ref  | rows | filtered | Extra       |
++----+-------------+---------------------+------------+------+---------------+------+---------+------+------+----------+-------------+
+|  1 | SIMPLE      | proyectos_soldadura | NULL       | ALL  | NULL          | NULL | NULL    | NULL |  308 |    10.00 | Using where |
++----+-------------+---------------------+------------+------+---------------+------+---------+------+------+----------+-------------+
++----+-------------+---------------------+------------+------+--------------------+--------------------+---------+-------+------+----------+-------+
+| id | select_type | table               | partitions | type | possible_keys      | key                | key_len | ref   | rows | filtered | Extra |
++----+-------------+---------------------+------------+------+--------------------+--------------------+---------+-------+------+----------+-------+
+|  1 | SIMPLE      | proyectos_soldadura | NULL       | ref  | idx_espesor_mm_gen | idx_espesor_mm_gen | 5       | const |    7 |   100.00 | NULL  |
++----+-------------+---------------------+------------+------+--------------------+--------------------+---------+-------+------+----------+-------+
++----------------------+
+| proyectos_espesor_33 |
++----------------------+
+|                    7 |
++----------------------+

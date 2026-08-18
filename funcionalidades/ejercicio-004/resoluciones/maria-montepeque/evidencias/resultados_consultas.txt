@@ -1,0 +1,50 @@
++----+------------------+----------------+
+| id | titulo           | artista        |
++----+------------------+----------------+
+|  1 | Luces de Neon    | Aurora Vega    |
+|  2 | Rumbo al Sur     | Los Cardenales |
+|  3 | Marea Baja       | Sofia Duarte   |
+|  4 | Codigo Abierto   | Byte Beat      |
+|  5 | Ultimo Tren      | Renata Solis   |
+|  6 | Fuego Lento      | Marco Reyes    |
+|  7 | Cielo de Octubre | Aurora Vega    |
+|  8 | Sin Frenos       | Los Cardenales |
++----+------------------+----------------+
++-------------+
+| id_generado |
++-------------+
+|           9 |
++-------------+
++--------------+
+| siguiente_id |
++--------------+
+|           10 |
++--------------+
++----+------------------+----------------+
+| id | titulo           | artista        |
++----+------------------+----------------+
+|  1 | Luces de Neon    | Aurora Vega    |
+|  2 | Rumbo al Sur     | Los Cardenales |
+|  4 | Codigo Abierto   | Byte Beat      |
+|  5 | Ultimo Tren      | Renata Solis   |
+|  6 | Fuego Lento      | Marco Reyes    |
+|  7 | Cielo de Octubre | Aurora Vega    |
+|  8 | Sin Frenos       | Los Cardenales |
+|  9 | Onda Expansiva   | Byte Beat      |
+| 10 | Reinicio         | Sofia Duarte   |
++----+------------------+----------------+
++-----+--------------------+----------------+
+| id  | titulo             | artista        |
++-----+--------------------+----------------+
+|   1 | Luces de Neon      | Aurora Vega    |
+|   2 | Rumbo al Sur       | Los Cardenales |
+|   4 | Codigo Abierto     | Byte Beat      |
+|   5 | Ultimo Tren        | Renata Solis   |
+|   6 | Fuego Lento        | Marco Reyes    |
+|   7 | Cielo de Octubre   | Aurora Vega    |
+|   8 | Sin Frenos         | Los Cardenales |
+|   9 | Onda Expansiva     | Byte Beat      |
+|  10 | Reinicio           | Sofia Duarte   |
+| 100 | Inicio Temporada 2 | Renata Solis   |
+| 101 | Segunda Pista T2   | Marco Reyes    |
++-----+--------------------+----------------+
