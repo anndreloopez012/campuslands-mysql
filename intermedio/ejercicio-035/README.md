@@ -3,24 +3,24 @@
 ## Dificultad
 Intermedio aplicado
 
-## Tematica usada
-taller mecanico de motos
+    ## Tematica usada
+    taller mecanico de motos
 
-## Contexto del problema
-Una academia tecnica esta construyendo un modulo de datos inspirado en taller mecanico de motos. El objetivo es guardar informacion ordenada, consultar indicadores utiles y dejar scripts SQL faciles de revisar por otro desarrollador.
+    ## Contexto del problema
+    Una academia tecnica esta construyendo un modulo de datos inspirado en taller mecanico de motos. El objetivo es guardar informacion ordenada, consultar indicadores utiles y dejar scripts SQL faciles de revisar por otro desarrollador.
 
-Aunque el ejercicio pertenece al nivel intermedio, debes resolverlo con mentalidad profesional: nombres claros, datos coherentes, consultas verificables y evidencia de resultados.
+    Aunque el ejercicio pertenece al nivel intermedio, debes resolverlo con mentalidad profesional: nombres claros, datos coherentes, consultas verificables y evidencia de resultados.
 
-## Objetivo
-Practicar subconsultas en MySQL creando una solucion que pueda ejecutarse desde cero y que demuestre analisis, orden y criterio tecnico.
+    ## Objetivo
+    Practicar subconsultas en MySQL creando una solucion que pueda ejecutarse desde cero y que demuestre analisis, orden y criterio tecnico.
 
-## Que vas a practicar
-- Lectura cuidadosa de requisitos.
-- Creacion o ajuste de tablas en MySQL.
-- Insercion de datos realistas.
-- Consultas para responder preguntas concretas.
-- Organizacion de archivos SQL por responsabilidad.
-- Documentacion breve de decisiones tecnicas.
+    ## Que vas a practicar
+    - Lectura cuidadosa de requisitos.
+    - Creacion o ajuste de tablas en MySQL.
+    - Insercion de datos realistas.
+    - Consultas para responder preguntas concretas.
+    - Organizacion de archivos SQL por responsabilidad.
+    - Documentacion breve de decisiones tecnicas.
 
 ## Explicacion paso a paso
 1. Lee el contexto y detecta que datos se necesitan.
